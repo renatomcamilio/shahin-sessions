@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
-import Button from "./Button";
+import Button from "./components/Button";
+import Navigation from "./components/Navigation";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -9,9 +10,16 @@ const styles = {
 
 const App = () => (
   <div style={styles}>
-    <Button label="Shahin" />
-    <Button label="Shahin" flavour="light" />
-    <Button label="Shahin" flavour="dark" />
+    <Navigation
+      items={[
+        { label: "About", link: "#" },
+        { label: "Contact", link: "#" },
+        { label: "Product", link: "#" }
+      ]}
+    />
+
+    <Button label="Take a Tour" flavour="light" />
+    <Button label="Sign Up" flavour="dark" />
   </div>
 );
 
