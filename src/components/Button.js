@@ -1,6 +1,8 @@
 import React from "react";
 
 const fallback = {
+  "font-family": "helvetica, arial, sans-serif",
+  "font-weight": "100",
   color: "#fff",
   "border-radius": "4px",
   padding: "12px 44px",
